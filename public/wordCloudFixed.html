@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>地政留言板</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/view.css">
+</head>
+<body>
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Load d3-cloud -->
+<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz" ></div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyA89rXLe9BJve0QnPHX0n-Em0N--n5IudA",
+    authDomain: "landeconomicswordcloud.firebaseapp.com",
+    databaseURL: "https://landeconomicswordcloud.firebaseio.com",
+    projectId: "landeconomicswordcloud",
+    storageBucket: "landeconomicswordcloud.appspot.com",
+    messagingSenderId: "716543953013",
+    appId: "1:716543953013:web:c4a73d70bab7c74997903c",
+    measurementId: "G-0R1GFMN2P8"
+  };
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+const db=firebase.firestore();
+
+</script>
+<script src="scripts/viewD3.js"></script>
+    
+</body>
