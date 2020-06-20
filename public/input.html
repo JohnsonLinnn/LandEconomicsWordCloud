@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>邊緣留言板</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- my CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Row for logo -->
+        <div class="row justify-content-sm-center " id="logo-section">
+            <img class="col-md-6" src="img/logo.png" id="logo">            
+        </div>
+
+        <!-- Row for Instruction -->
+        <div class="row justify-content-sm-center" id="instruct-section">
+            <img class="col-md-6" src="img/Question_Text.png" id="instruct-photo">           
+        </div>
+
+        <!-- Row for Input -->
+        <div class="row justify-content-sm-center">
+            <form class="col-md-6" id="textInput">       
+                <input type="text" id="inputMsg" placeholder="請輸入文字">
+                <button type="submit" id="rangefinder">
+                    <img src="img/Submit.png" id="submit-button">
+                </button>
+            </form>
+        </div>
+        
+    </div>
+
+
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyA89rXLe9BJve0QnPHX0n-Em0N--n5IudA",
+    authDomain: "landeconomicswordcloud.firebaseapp.com",
+    databaseURL: "https://landeconomicswordcloud.firebaseio.com",
+    projectId: "landeconomicswordcloud",
+    storageBucket: "landeconomicswordcloud.appspot.com",
+    messagingSenderId: "716543953013",
+    appId: "1:716543953013:web:c4a73d70bab7c74997903c",
+    measurementId: "G-0R1GFMN2P8"
+  };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db=firebase.firestore();
+
+    </script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
