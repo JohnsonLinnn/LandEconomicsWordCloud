@@ -57,7 +57,7 @@ function draw(words) {
         .data(words)
       .enter().append("text")
         .style("font-size", function(d) { return d.size; })
-        .style("fill", "#686963")
+        .style("fill", "#b3ab75")
         .attr("text-anchor", "middle")
         .style("font-family", "Impact")
         .style("font-weight", "Bold")

@@ -1,9 +1,9 @@
 body{   
-    background-image: url('../img/TextBoardBG.png'); 
-    background-repeat: no-repeat;     
-    background-color: white;
+    background-image: url('../img/TextBoardBG.png');
+    background-color:#475d3a;
     width:fit-content;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 #createjscontainer{
     outline-style: dotted;
