@@ -10,7 +10,7 @@ submitText.addEventListener('submit', (e) => {
     var x = Math.floor(Math.random() * 100) + 1;
     if(submitText.inputMsg.value!=""){
       db.collection('submitedText').add({
-        word: submitText.inputMsg.value,
+        text: submitText.inputMsg.value,
         size:x
         }).then(() => {
         // close the create modal & reset for

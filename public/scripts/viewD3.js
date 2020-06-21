@@ -38,7 +38,7 @@ db.collection('submitedText').onSnapshot(snapshot => {
     // Wordcloud features that are different from one word to the other must be here
     var layout = d3.layout.cloud()
       .size([width, height])
-      .words(texts.map(function(d) { return {text: d.word, size:d.size}; }))
+      .words(texts.map(function(d) { return {text: d.text, size:d.size}; }))
       .padding(5)        //space between words
       .rotate(function() { return ~~(Math.random() * 1) * 60; })
       .fontSize(function(d) { return d.size; })      // font size of words

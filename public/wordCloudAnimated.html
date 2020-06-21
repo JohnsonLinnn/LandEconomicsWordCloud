@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>地政留言板</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/animated.css">
+</head>
+
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+<!--firebase config-->
+<script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyA89rXLe9BJve0QnPHX0n-Em0N--n5IudA",
+    authDomain: "landeconomicswordcloud.firebaseapp.com",
+    databaseURL: "https://landeconomicswordcloud.firebaseio.com",
+    projectId: "landeconomicswordcloud",
+    storageBucket: "landeconomicswordcloud.appspot.com",
+    messagingSenderId: "716543953013",
+    appId: "1:716543953013:web:c4a73d70bab7c74997903c",
+    measurementId: "G-0R1GFMN2P8"
+  };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db=firebase.firestore();
+</script>
+
+<!--Here are the api for d3-->
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+
+<div id="container">
+    <div id="canvas"></div>
+ </div>
+<script src="scripts/Animation.js"></script>
+</body>
