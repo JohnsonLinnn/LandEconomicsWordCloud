@@ -2,8 +2,8 @@ var texts=[];
 var isSvg =false;
 
 db.collection('submitedText').onSnapshot(snapshot => {
-    loadText(snapshot.docs);
-})
+  loadText(snapshot.docs);
+  })
     const loadText =(data) =>{
     //loading data into array
     if (data.length) {
