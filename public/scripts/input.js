@@ -7,7 +7,7 @@ console.log(submitText);
 submitText.addEventListener('submit', (e) => {
   console.log(submitText.inputMsg.value); 
   e.preventDefault();
-    var x = Math.floor(Math.random() * 50) + 30;
+    var x = Math.floor(Math.random() * 50) + 40;
     var divider =(Math.floor(Math.random() * 10))%4;
     if(submitText.inputMsg.value!="" && divider==0){
       db.collection('submitedText').add({

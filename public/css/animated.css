@@ -1,4 +1,7 @@
-body {     
-    background-color: #475d3a;
+body{   
+    background-image: url('../img/TextBoardBG.png');
+    background-color:#475d3a;
+    width:fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-

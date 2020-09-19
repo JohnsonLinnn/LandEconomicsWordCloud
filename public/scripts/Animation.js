@@ -76,14 +76,14 @@ function wordCloud(){
     // set the dimensions and margins of the graph
     var margin = {top: 180, right: 20, bottom: 90, left: 20},
         width = 1460- margin.left - margin.right,
-        height = 600 - margin.top - margin.bottom;
+        height = 1000 - margin.top - margin.bottom;
 
     //Construct the word cloud's SVG element
     var svg = d3.select("div").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
-        .attr("transform", "translate(900,300)");
+        .attr("transform", "translate(900,600)");
 
     console.log(svg);
     //Draw the word cloud
@@ -129,7 +129,7 @@ function wordCloud(){
         //The outside world will need to call this function, so make it part
         // of the wordCloud return value.
         update: function(texts) {
-            d3.layout.cloud().size([1000, 400])
+            d3.layout.cloud().size([1000, 800])
                 .words(texts)
                 .padding(5)
                 .rotate(function() { return ~~(Math.random() * 2) * 90; })
@@ -185,7 +185,7 @@ function showNewWords(vis, i) {
     
     console.log("calling update")
     times++;
-    setTimeout(function() { showNewWords(vis, i + 1)}, 2000)
+    setTimeout(function() { showNewWords(vis, i + 1)}, 8000)
 }
 
 //Create a new instance of the word cloud visualisation.
